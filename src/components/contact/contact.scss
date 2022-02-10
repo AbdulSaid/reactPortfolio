@@ -1,80 +1,129 @@
-@import "../../global.scss";
+.c {
+  height: 100vh;
+  position: relative;
+}
 
-.contact {
-  background-color: white;
+.c-wrapper {
+  padding: 50px;
+  height: 80%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  // background-color: pink;
+  overflow: hidden;
+}
 
-  @include mobile {
+.c-left {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  // padding: 10px;
+  // display: flex;
+  // flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 100px;
+  // background-color: red;
+  overflow: hidden;
+}
+
+.c-img {
+  height: 350px;
+  width: 350px;
+  margin-left: 300px;
+}
+
+.c-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 75px;
+}
+
+.c-title {
+  font-size: 60px;
+  width: 80%;
+}
+
+.c-info-item {
+  display: flex;
+  align-items: center;
+  margin: 50px 0px;
+  font-weight: 300;
+  width: 70%;
+}
+
+.c-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  width: 50%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+textarea {
+  width: 90%;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+  // border: none;
+  // border-bottom: 1px solid black;
+}
+
+button {
+  border: none;
+  padding: 15px;
+  background-color: #5d92e3;
+  border-radius: 20px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .c-wrapper {
     flex-direction: column;
+    padding: 0px 50px;
+  }
+  .c-title {
+    font-size: 30px;
+  }
+  .c-info-item {
+    margin: 20px 0px;
+    width: 100%;
   }
 
-  .left {
-    flex: 1;
-    overflow: hidden;
-
-    img {
-      height: 100%;
-      width: 100%;
-    }
+  .c-desc {
+    display: none;
   }
 
-  .right {
-    flex: 1;
+  form {
+    margin-top: 0px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    h2 {
-      font-size: 30px;
-    }
-    form {
-      width: 70%;
-      height: 70%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-
-      input {
-        width: 300px;
-        height: 30px;
-        font-size: 30px;
-
-        @include mobile {
-          width: 200px;
-          height: 20px;
-        }
-      }
-
-      textarea {
-        width: 300px;
-        height: 200px;
-        font-size: 14px;
-
-        @include mobile {
-          width: 200px;
-          height: 100px;
-        }
-      }
-
-      button {
-        width: 150px;
-        height: 30px;
-        color: white;
-        background-color: #5d92e3;
-        border: none;
-        border-radius: 10px;
-        font-weight: 500;
-        cursor: pointer;
-
-        &:focus {
-          outline: none;
-        }
-      }
-      span {
-        color: green;
-      }
-    }
+    flex-wrap: wrap;
+  }
+  input {
+    width: 35%;
+    height: 40px;
+    margin: 10px;
+    margin-left: 0px;
+  }
+  button {
+    margin-top: 10px;
   }
 }
