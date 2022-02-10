@@ -3,10 +3,10 @@ import "./portfolio.scss";
 import { useEffect, useState } from "react";
 import {
   featuredPortfolio,
-  webPortfolio,
-  mobilePortfolio,
-  designPortfolio,
-  contentPortfolio,
+  reactPortfolio,
+  web3Portfolio,
+  cloudPortfolio,
+  devopsPortfolio,
 } from "../../data";
 
 export default function Portfolio() {
@@ -18,20 +18,20 @@ export default function Portfolio() {
       title: "Featured",
     },
     {
-      id: "web",
-      title: "Web App",
+      id: "react",
+      title: "React",
     },
     {
-      id: "mobile",
-      title: "Mobile App",
+      id: "web3",
+      title: "Web3",
     },
     {
-      id: "design",
-      title: "Design",
+      id: "cloud",
+      title: "Cloud",
     },
     {
-      id: "content",
-      title: "Content",
+      id: "devops",
+      title: "DevOps",
     },
   ];
 
@@ -40,17 +40,17 @@ export default function Portfolio() {
       case "featured":
         setData(featuredPortfolio);
         break;
-      case "web":
-        setData(webPortfolio);
+      case "react":
+        setData(reactPortfolio);
         break;
-      case "mobile":
-        setData(mobilePortfolio);
+      case "web3":
+        setData(web3Portfolio);
         break;
-      case "design":
-        setData(designPortfolio);
+      case "cloud":
+        setData(cloudPortfolio);
         break;
-      case "content":
-        setData(contentPortfolio);
+      case "devops":
+        setData(devopsPortfolio);
         break;
       default:
         setData(featuredPortfolio);
@@ -71,10 +71,13 @@ export default function Portfolio() {
       </ul>
       <div className="container">
         {data.map((d) => (
-          <div className="item">
-            <img src={d.img} alt="" />
-            <h3>{d.title}</h3>
-          </div>
+          <a href={d.link}>
+            <div className="item">
+              <img src={d.img} alt="" />
+
+              <h3>{d.title}</h3>
+            </div>
+          </a>
         ))}
       </div>
     </div>

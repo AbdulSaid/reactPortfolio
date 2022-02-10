@@ -9,6 +9,7 @@
   top: 0;
   z-index: 3;
   transition: all 1s ease;
+  overflow: hidden;
 
   .wrapper {
     padding: 10px 30px;
@@ -25,26 +26,6 @@
         text-decoration: none;
         color: inherit;
         margin-right: 40px;
-      }
-
-      .itemContainer {
-        display: flex;
-        align-items: center;
-        margin-left: 30px;
-
-        @include mobile {
-          display: none;
-        }
-
-        .icon {
-          font-size: 18px;
-          margin-right: 5px;
-        }
-
-        span {
-          font-size: 15px;
-          font-weight: 500;
-        }
       }
     }
 

@@ -1,8 +1,9 @@
 export const featuredPortfolio = [
   {
     id: 1,
-    title: "Social Media App",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+    title: "Scheduler",
+    img: "https://github.com/AbdulSaid/scheduler/raw/master/public/images/main.png?raw=true",
+    link: "https://github.com/AbdulSaid/scheduler",
   },
   {
     id: 2,
@@ -31,7 +32,7 @@ export const featuredPortfolio = [
   },
 ];
 
-export const webPortfolio = [
+export const reactPortfolio = [
   {
     id: 1,
     title: "Web Social Media App",
@@ -64,7 +65,7 @@ export const webPortfolio = [
   },
 ];
 
-export const mobilePortfolio = [
+export const web3Portfolio = [
   {
     id: 1,
     title: "Mobile Social Media App",
@@ -97,7 +98,7 @@ export const mobilePortfolio = [
   },
 ];
 
-export const designPortfolio = [
+export const cloudPortfolio = [
   {
     id: 1,
     title: "Design Social Media App",
@@ -130,7 +131,7 @@ export const designPortfolio = [
   },
 ];
 
-export const contentPortfolio = [
+export const devopsPortfolio = [
   {
     id: 1,
     title: "Content Social Media App",
